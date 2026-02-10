@@ -1,6 +1,6 @@
 data = [
     {
-        'name' : 'Naurto', 
+        'name' : 'Naruto', 
         'follower count' : 500,
         'description' : 'anime about a ninja boy',
         'country': 'Japan'
@@ -18,10 +18,16 @@ data = [
         'country': 'United States'
     },
     {
-        'name' : 'Rober Caro', 
+        'name' : 'Robert Caro', 
         'follower count' : 200,
         'description' : 'Author of the Power Broker',
         'country': 'United States'
+    },
+     {
+        'name' : 'Laufey', 
+        'follower count' : 300,
+        'description' : 'singer',
+        'country': 'iceland'
     }
 ]
    
