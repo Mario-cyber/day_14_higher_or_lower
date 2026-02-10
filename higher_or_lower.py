@@ -18,5 +18,20 @@ print(f"Choose between option A: {option_a['name']}, a {option_a['description']}
 print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
 
 
+followers_a =  option_a['follower_count']
+followers_b =  option_b['follower_count']
+
+def user_choice():
+    user_choice = input("type A or B: ").capitalize
+    remaining_option = 0
+    if user_choice == 'A' :
+        user_guess = followers_a
+        remaining_option =  followers_b
+    elif user_choice == 'B' :
+        user_guess = followers_b
+        remaining_option = followers_a
+    return user_guess
 
 
+
+print(user_choice())
