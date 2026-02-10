@@ -19,7 +19,7 @@ data = [
     },
     {
         'name' : 'Robert Caro', 
-        'followers_count' : 200,
+        'follower_count' : 200,
         'description' : 'Author of the Power Broker',
         'country': 'United States'
     },
