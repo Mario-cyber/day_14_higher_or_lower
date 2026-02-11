@@ -9,15 +9,14 @@ import random
 
 #potentially make two fucntion, one to present the game and one two actuallly compare
 
-print("welcome to higher or lower")
-
-indexes  = [0]
+index_list  = [0]
 new_index = 0
-for item in data - 1 :
-    new_index += 1
-    indexes.append(new_index)
 
-print(indexes)
+while len(index_list) < len(data):
+    new_index += 1 
+    index_list.append(new_index)
+
+print("welcome to higher or lower")
 
 option_a = data[random.randint(0,len(data)-1)]
 option_b  = data[random.randint(0,len(data)-1)]
