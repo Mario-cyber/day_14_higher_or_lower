@@ -11,6 +11,14 @@ import random
 
 print("welcome to higher or lower")
 
+indexes  = [0]
+new_index = 0
+for item in data - 1 :
+    new_index += 1
+    indexes.append(new_index)
+
+print(indexes)
+
 option_a = data[random.randint(0,len(data)-1)]
 option_b  = data[random.randint(0,len(data)-1)]
 
@@ -24,13 +32,16 @@ def user_choice():
    
     followers_a =  option_a['follower_count']
     followers_b =  option_b['follower_count']
-    user_guess = 0
     user_choice = input("type A or B: ").capitalize()
     if user_choice == 'A' :
         user_guess = followers_a
+        # remaining_choice = followers_b
     elif user_choice == 'B' :
         user_guess = followers_b
-    print(user_guess)
+        # remaining_choice = followers_a
+    return user_guess
 
 
-user_choice()
+
+
+# def copare(option_A,Option_B):

@@ -6,10 +6,10 @@ data = [
         'country': 'Japan'
     },
     {
-        'name' : 'soccer', 
+        'name' : 'Shakira', 
         'follower_count' : 1200,
-        'description' : 'worldwide sport',
-        'country': 'global'
+        'description' : 'singer',
+        'country': 'Colombia'
     },
     {
         'name' : 'Tony Bourdain', 
