@@ -9,6 +9,8 @@ option_a = {}
 option_b = {}
 
 user_choice = ""
+remaining_choice = 0
+user_guess = 0
 
 def populate_index():
     new_index = 0
@@ -40,16 +42,18 @@ def present_options():
 
 
 def user_choice():
-    
+    global remaining_choice, user_guess
     followers_a =  option_a['follower_count']
     followers_b =  option_b['follower_count']
     user_choice = input("type A or B: ").capitalize()
     if user_choice == 'A' :
         user_guess = followers_a
         print("outcome #1")
-        # remaining_choice = followers_b
+        remaining_choice = followers_b
     elif user_choice == 'B' :
         user_guess = followers_b
         print("outcome #2")
-        # remaining_choice = followers_a
-    return user_guess
+        remaining_choice = followers_a
+    
+    print(user_guess,remaining_choice)
+    
