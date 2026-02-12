@@ -16,10 +16,26 @@ while len(index_list) < len(data):
     new_index += 1 
     index_list.append(new_index)
 
+print(index_list)
+
+index_a =  random.randint(0,len(index_list)-1)
+print(index_a)
+index_list.pop(index_a)
+
+print(index_list)
+#delete said index from index list 
+
+index_b = random.randint(0,len(index_list)-1)
+
+print(index_b)
+index_list.pop(index_b)
+
+print(index_list)
+
 print("welcome to higher or lower")
 
-option_a = data[random.randint(0,len(data)-1)]
-option_b  = data[random.randint(0,len(data)-1)]
+option_a = data[index_a]
+option_b  = data[index_b]
 
 print(f"Choose between option A: {option_a['name']}, a {option_a['description']} from {option_a['country']}")
 print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
