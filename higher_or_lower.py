@@ -10,23 +10,24 @@ import functions as fn
 #potentially make two fucntion, one to present the game and one two actuallly compare
 
 player_score = 0 
-index_a = 0
-index_b = 0 
+
 
 
 
 fn.populate_index()
 
-fn.select_index(a=index_a,b=index_b)
+print(fn.populate_index())
+
+fn.select_index()
+
+fn.present_options()
 
 
+# option_a = data[index_a]
+# option_b  = data[index_b]
 
-
-option_a = data[index_a]
-option_b  = data[index_b]
-
-print(option_a)
-print(option_b)
+# print(option_a)
+# print(option_b)
 
 # print(f"Choose between option A: {option_a['name']}, a {option_a['description']} from {option_a['country']}")
 # print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
