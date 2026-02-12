@@ -9,6 +9,7 @@ import functions as fn
 
 #potentially make two fucntion, one to present the game and one two actuallly compare
 
+player_score = 0 
 index_a = 0
 index_b = 0 
 
@@ -16,7 +17,7 @@ index_b = 0
 
 fn.populate_index()
 
-fn.select_index()
+fn.select_index(a=index_a,b=index_b)
 
 
 

@@ -11,7 +11,8 @@ def populate_index():
     print(index_list)
 
 
-def select_index():
+def select_index(a,b):
+    
     print(index_list)
     index_a =  random.choice(index_list)
     print(index_a)
@@ -23,15 +24,3 @@ def select_index():
     print(index_list)
 
 
-
-# index_a =  random.randint(0,len(index_list)-1)
-# print(index_a)
-# index_list.pop(index_a)
-
-# print(index_list)
-# #delete said index from index list 
-
-# index_b = random.randint(0,len(index_list)-1)
-
-# print(index_b)
-# index_list.pop(index_b)
