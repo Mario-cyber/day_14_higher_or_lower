@@ -1,6 +1,6 @@
 from game_data import data 
 import random
-
+import functions as fn 
 # compare game should 
 # 1) print the first contender in and f string such that 
 # Compare A : 'name' , a 'description' , from 'country'
@@ -9,36 +9,26 @@ import random
 
 #potentially make two fucntion, one to present the game and one two actuallly compare
 
-index_list  = [0]
-new_index = 0
+index_a = 0
+index_b = 0 
 
-while len(index_list) < len(data):
-    new_index += 1 
-    index_list.append(new_index)
 
-print(index_list)
 
-index_a =  random.randint(0,len(index_list)-1)
-print(index_a)
-index_list.pop(index_a)
+fn.populate_index()
 
-print(index_list)
-#delete said index from index list 
+fn.select_index()
 
-index_b = random.randint(0,len(index_list)-1)
 
-print(index_b)
-index_list.pop(index_b)
 
-print(index_list)
-
-print("welcome to higher or lower")
 
 option_a = data[index_a]
 option_b  = data[index_b]
 
-print(f"Choose between option A: {option_a['name']}, a {option_a['description']} from {option_a['country']}")
-print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
+print(option_a)
+print(option_b)
+
+# print(f"Choose between option A: {option_a['name']}, a {option_a['description']} from {option_a['country']}")
+# print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
 
 
 
