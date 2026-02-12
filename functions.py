@@ -22,15 +22,15 @@ def populate_index():
 
 def select_index():
     global index_a, index_b
-    print(index_list)
+    # print(index_list)
     index_a = random.choice(index_list)
-    print(index_a)
+    # print(index_a)
     index_list.remove(index_a)
-    print(index_list)
+    # print(index_list)
     index_b = random.choice(index_list)
-    print(index_b)
+    # print(index_b)
     index_list.remove(index_b)
-    print(index_list)
+    # print(index_list)
 
 
 def present_options():
@@ -39,10 +39,10 @@ def present_options():
     option_b  = data[index_b]
     print(f"Choose between option A: {option_a['name']}, a {option_a['description']} from {option_a['country']}")
     print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
-
+    # user_choice()
 
 def user_choice():
-    global remaining_choice, user_guess
+    global remaining_choice, user_guess,option_a,option_b
     followers_a =  option_a['follower_count']
     followers_b =  option_b['follower_count']
     user_choice = input("type A or B: ").capitalize()
@@ -50,10 +50,21 @@ def user_choice():
         user_guess = followers_a
         print("outcome #1")
         remaining_choice = followers_b
+        # option_b = option_a
     elif user_choice == 'B' :
         user_guess = followers_b
         print("outcome #2")
         remaining_choice = followers_a
+        # option_b = option_a
+    # present_options()
     
+
+def comparison():
     print(user_guess,remaining_choice)
+    if user_guess < remaining_choice:
+        print("you lose")
+    elif user_guess > remaining_choice:
+        print('you win')
+
+
     
