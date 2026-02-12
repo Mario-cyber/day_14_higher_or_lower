@@ -1,6 +1,8 @@
 from game_data import data 
 import random
 
+score = 0
+
 index_list  = [0]
 index_a = 0
 index_b = 0 
@@ -36,7 +38,7 @@ def select_index():
 def present_options():
     global option_a, option_b
     option_a = data[index_a]
-    option_b  = data[index_b]
+    option_b = data[index_b]
     print(f"Choose between option A: {option_a['name']}, a {option_a['description']} from {option_a['country']}")
     print(f"Or option B : {option_b['name']}, a {option_b['description']} from {option_b['country']}")
     # user_choice()
@@ -60,11 +62,14 @@ def user_choice():
     
 
 def comparison():
+    global score, option_a 
     print(user_guess,remaining_choice)
     if user_guess < remaining_choice:
         print("you lose")
     elif user_guess > remaining_choice:
         print('you win')
+        score +=1
+        print(score)
 
 
     
