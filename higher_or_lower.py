@@ -16,8 +16,6 @@ fn.user_choice()
 fn.comparison()
 
 
-
-
-
-
-# def copare(option_A,Option_B):
+''' Need to finish up functionality that makes chosen option, default option if corret.
+alternatively, intead of messing around with indexes, you could make a local object to hold the infromation 
+you need and swap it out as needed '''
