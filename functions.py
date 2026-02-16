@@ -23,16 +23,12 @@ def populate_index():
 
 
 def select_index():
-    global index_a, index_b
-    # print(index_list)
+    global index_a, index_b 
     index_a = random.choice(index_list)
-    # print(index_a)
     index_list.remove(index_a)
-    # print(index_list)
     index_b = random.choice(index_list)
-    # print(index_b)
     index_list.remove(index_b)
-    # print(index_list)
+    
 
 
 def present_options():
