@@ -19,3 +19,5 @@ fn.comparison()
 ''' Need to finish up functionality that makes chosen option, default option if corret.
 alternatively, intead of messing around with indexes, you could make a local object to hold the infromation 
 you need and swap it out as needed '''
+
+#oh my god blah blah 
